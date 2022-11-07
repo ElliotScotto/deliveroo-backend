@@ -427,6 +427,8 @@ app.get("/", (req, res) => {
 //   });
 // }
 
-app.listen(process.env.PORT || 3200, () => {
-  console.log("Server started");
+const PORT = 3200;
+
+app.listen(process.env.PORT || PORT, () => {
+  console.log("Server started on port " + PORT);
 });
